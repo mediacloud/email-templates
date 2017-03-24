@@ -1,0 +1,17 @@
+{% extends "email.txt" %}
+
+{% block content_title %}
+{{ content_title }}
+{% endblock %}
+
+{% block content_body %}
+{{content_body}}
+{% endblock %}
+
+{% block action_text %}
+{{action_text}}
+{% endblock %}
+
+{% block action_url %}
+{{action_url}}
+{% endblock %}

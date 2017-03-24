@@ -1,0 +1,38 @@
+{% extends "email.html" %}
+
+{% block email_title %}
+Thanks for Suggesting {{ url }}
+{% endblock %}
+
+{% block content_title %}
+Thanks for Suggesting {{ url }}
+{% endblock %}
+
+{% block content_body %}
+<p style="text-align: left;line-height: 30px;color: #373737;">
+Thanks for suggesting {{ url }}.  We'll review it soon and get back to you.
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+<b>Suggested by</b>: {{ username }}
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+<b>URL</b>: {{ url }}
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+<b>Name</b>: {{ name }}
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+<b>Feed URL</b>: {{ feed_url }}
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+<b>Reason</b>: {{ reason }}
+</p>
+{% endblock %}
+
+{% block action_text %}
+Login to Media Cloud
+{% endblock %}
+
+{% block action_url %}
+https://sources.mediacloud.org/#/login
+{% endblock %}

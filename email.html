@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+    <title>{% block email_title %}{% endblock %}</title>
+
+    <style>
+      body {
+        font-family: Lato;
+      }
+
+      #media_cloud_logo {
+        width: 12%;
+      }
+
+      h1 {
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+        line-height: 30px;
+        color: #373737;
+      }
+
+      a {
+        color: #4198BB;
+        font-weight: bolder;
+        text-decoration: none;
+      }
+
+      button {
+        padding: 13px 30px;
+        border-radius: 2px;
+        border: 0;
+        color: white;
+        background-color: #4198BB;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+      }
+
+      #mediaContainer {
+        border: 1px solid #E0E0E0;
+        border-radius: 2px;
+      }
+
+      #mediaCaption {
+        text-align: center;
+        font-size: 14px;
+      }
+
+      #emailFooter {
+        font-size: 13px;
+      }
+
+      hr {
+        border-bottom: 1px solid #E0E0E0;
+        border-top: 0;
+      }
+
+    </style>
+  </head>
+
+  <body style="font-family: Lato;">
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+      <tr>
+        <td align="center" valign="top">
+          <table border="0" cellpadding="20" cellspacing="0" width="700" id="emailContainer">
+            <tr>
+              <td align="center" valign="top">
+                <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailBody">
+                  <tr>
+                    <td align="center" valign="top">
+                      <p style="text-align: left;line-height: 30px;color: #373737;"><img id="media_cloud_logo" src="http://mediacloud-beta.wordpress.brownbag.me/wp-content/uploads/sites/18/2016/12/Screen-Shot-2016-10-21-at-9.25.09-AM.png" style="width: 12%;"></p>
+                      <h1 style="text-align: left;">{% block content_title %}{% endblock %}</h1>
+                      {% block content_body %}{% endblock %}
+                      <p style="text-align: left;line-height: 30px;color: #373737;">
+                        Thanks,
+                        <br>
+                        — the Media Cloud team
+                      </p>
+                      <br><br>
+                      <a href="{% block action_url %}{% endblock %}" style="color: #4198BB;font-weight: bolder;text-decoration: none;"><button style="padding: 13px 30px;border-radius: 2px;border: 0;color: white;background-color: #4198BB;font-size: 15px;letter-spacing: 0.5px;">{% block action_text %}{% endblock %}</button></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailFooter" style="font-size: 13px;">
+                  <hr style="border-bottom: 1px solid #E0E0E0;border-top: 0;">
+                  <tr>
+                    <td align="center" valign="top">
+                      Problems? Email <a href="mailto:support@mediacloud.org">support@mediacloud.org</a>
+                      <br />
+                      <a href="https://civic.mit.edu" style="color: #4198BB;font-weight: bolder;text-decoration: none;">MIT Center for Civic Media</a> and <a href="https://cyber.harvard.edu" style="color: #4198BB;font-weight: bolder;text-decoration: none;">Berkman Klein Center for Internet and Society at Harvard University</a>
+                      <br />
+                      © 2017
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+
+<!-- Used MailChimp's Inliner tool to convert CSS in <style></style> tags to inline CSS
+https://templates.mailchimp.com/resources/inline-css/ -->
+
+<!-- <!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+    <title>Thanks for registering with Media Cloud!</title>
+
+    <style>
+      body {
+        font-family: Lato;
+      }
+
+      #media_cloud_logo {
+        width: 12%;
+      }
+
+      h1 {
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+        line-height: 30px;
+        color: #373737;
+      }
+
+      a {
+        color: #4198BB;
+        font-weight: bolder;
+        text-decoration: none;
+      }
+
+      button {
+        padding: 13px 30px;
+        border-radius: 2px;
+        border: 0;
+        color: white;
+        background-color: #4198BB;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+      }
+
+      #mediaContainer {
+        border: 1px solid #E0E0E0;
+        border-radius: 2px;
+      }
+
+      #mediaCaption {
+        text-align: center;
+        font-size: 14px;
+      }
+
+      #emailFooter {
+        font-size: 13px;
+      }
+
+      hr {
+        border-bottom: 1px solid #E0E0E0;
+        border-top: 0;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+      <tr>
+        <td align="center" valign="top">
+          <table border="0" cellpadding="20" cellspacing="0" width="700" id="emailContainer">
+            <tr>
+              <td align="center" valign="top">
+                <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailBody">
+                  <tr>
+                    <td align="center" valign="top">
+                      <p style="text-align:left"><img id="media_cloud_logo" src="http://mediacloud-beta.wordpress.brownbag.me/wp-content/uploads/sites/18/2016/12/Screen-Shot-2016-10-21-at-9.25.09-AM.png"></img></p>
+                      <h1>Thanks for registering with Media Cloud!</h1>
+                      <p>
+                        Welcome to our  community of researchers, activists and practitioners from
+                        around the globe using Media Cloud to <b>explore and investigate</b> digital media.
+                        We have a database of over 50,000 news sources and a variety of analytical
+                        tools to help you make sense of the data.
+                        <br><br>
+                        To get started we recommend:
+                      </p>
+                      <br>
+                      <table cellpadding="20" cellspacing="0" width="100%" id="mediaContainer">
+                        <tr>
+                          <td width="50%"><b>Watch our video</b></td>
+                          <td width="50%"><b>Read our Intro User Guides</b></td>
+                        </tr>
+                        <tr>
+                          <td width="50%"><img id="media_cloud_logo" src="http://mediacloud-beta.wordpress.brownbag.me/wp-content/uploads/sites/18/2016/12/Screen-Shot-2016-10-21-at-9.25.09-AM.png"></img></td>
+                          <td width="50%"><img id="media_cloud_logo" src="http://mediacloud-beta.wordpress.brownbag.me/wp-content/uploads/sites/18/2016/12/Screen-Shot-2016-10-21-at-9.25.09-AM.png"></img></td>
+                        </tr>
+                        <tr id="mediaCaption">
+                          <td width="50%">Learn about the media insights you can gain from our tools (5 min video)</td>
+                          <td width="50%">Learn how to use our tools and what features they include (15 min read)</td>
+                        </tr>
+                      </table>
+                      <br>
+                      <p>
+                        You can also jump right into exploring the data on our tools homepage! Visit
+                        <a href="">the FAQ</a> for more information and hover over the tool icons for helpful descriptions.
+                        <br><br>
+                        If you're interested in learning more about past and ongoing research using Media
+                        Cloud, or updates on the latest features and visualizations, do check out
+                        <a href="http://mediacloud.org/blog">our blog</a>.
+                        <br><br>
+                        Please don't hesitate to reach out to us with any questions or comments at
+                        <a href="mailto:info@mediacloud.org">info@mediacloud.org</a>, and to interact with other users or post your questions & comments
+                        within the community, feel free to sign up to our <a href="">discussion forum</a>.
+                        <br><br>
+                        Looking forward to staying in touch,
+                        <br>
+                        — the Media Cloud team
+                      </p>
+                      <br><br>
+                      <a href="https://dashboard.mediacloud.org/#login"><button>Login to Media Cloud</button></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailFooter">
+                  <hr>
+                  <tr>
+                    <td align="center" valign="top">
+                      <a href="https://civic.mit.edu">MIT Center for Civic Media</a> © 2017
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html> -->

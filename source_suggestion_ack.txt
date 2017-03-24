@@ -1,0 +1,29 @@
+{% extends "email.txt" %}
+
+{% block content_title %}
+Thanks for Suggesting {{ url }}
+{% endblock %}
+
+{% block content_body %}
+Hi,
+
+Thanks for suggesting {{ url }}.  We'll review it soon and get back to you.
+
+Suggested by: {{ username }}
+
+URL: {{ url }}
+
+Name: {{ name }}
+
+Feed URL: {{ feed_url }}
+
+Reason: {{ reason }}
+{% endblock %}
+
+{% block action_text %}
+Login to Media Cloud
+{% endblock %}
+
+{% block action_url %}
+https://sources.mediacloud.org/#/login
+{% endblock %}

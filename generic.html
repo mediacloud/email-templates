@@ -1,0 +1,23 @@
+{% extends "email.html" %}
+
+{% block email_title %}
+{{ email_title }}
+{% endblock %}
+
+{% block content_title %}
+{{ content_title }}
+{% endblock %}
+
+{% block content_body %}
+<p style="text-align: left;line-height: 30px;color: #373737;">
+{{content_body}}
+</p>
+{% endblock %}
+
+{% block action_text %}
+{{action_text}}
+{% endblock %}
+
+{% block action_url %}
+{{action_url}}
+{% endblock %}

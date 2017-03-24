@@ -1,0 +1,15 @@
+{% block content_title %}{% endblock %}
+
+{% block content_body %}{% endblock %}
+
+Thanks,
+
+— the Media Cloud team
+
+{% block action_text %}{% endblock %}:
+{% block action_url %}{% endblock %}
+
+Problems? Email support@mediacloud.org
+
+MIT Center for Civic Media & Berkman Klein Center for Internet and Society at Harvard University
+© 2017
