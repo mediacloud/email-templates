@@ -1,4 +1,4 @@
-{% extends "email.txt" %}
+{% extends "emails/email.txt" %}
 
 {% block content_title %}
 Thanks for Suggesting {{ url }}
