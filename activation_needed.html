@@ -1,0 +1,36 @@
+{% extends "email.html" %}
+
+{% block content_title %}
+Activate your Media Cloud account
+{% endblock %}
+
+{% block content_body %}
+<p style="text-align: left;line-height: 30px;color: #373737;">
+Hi {{ full_name }},
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+Thanks for registering for Media Cloud. 
+<a href="{{ activation_url }}">Click this link to activate your account</a>
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+You can use this user account to access the variety of Media Cloud web-based tools
+and to make calls to the Media Cloud API.
+</p>
+{% if subscribe_to_newsletter %}
+<p style="text-align: left;line-height: 30px;color: #373737;">
+As you requested, we've subscribed you to our <a href="https://groups.io/g/mediacloud">discussion group</a>. That's a great place to ask questions and get support. As a backup, you can always email us at <a href="mailto:support@mediacloud.org">support@mediacloud.org</a>.
+</p>
+{% else %}
+<p style="text-align: left;line-height: 30px;color: #373737;">
+Need help? Join our <a href="https://groups.io/g/mediacloud">discussion group</a><br />or email <a href="mailto:support@mediacloud.org">support@mediacloud.org</a>.
+</p>
+{% endif %}
+{% endblock %}
+
+{% block action_text %}
+Activate your account
+{% endblock %}
+
+{% block action_url %}
+{{ activation_url }}
+{% endblock %}

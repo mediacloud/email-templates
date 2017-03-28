@@ -1,0 +1,29 @@
+{% extends "email.txt" %}
+
+{% block content_title %}
+Your Media Cloud account is active
+{% endblock %}
+
+{% block content_body %}
+Hi {{ full_name }},
+
+Your Media Cloud account is now active. You can use this user account to access the
+variety of Media Cloud web-based tools and to make calls to the Media Cloud API.
+
+Need Help?
+
+Visit our discussion group:
+  https://groups.io/g/mediacloud">discussion group
+That's a great place to ask questions and get support. 
+
+As a backup, you can always email us at:
+  mailto:support@mediacloud.org">support@mediacloud.org</a>.
+{% endblock %}
+
+{% block action_text %}
+Start using Media Cloud
+{% endblock %}
+
+{% block action_url %}
+https://tools.mediacloud.org
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "email.html" %}
+
+{% block content_title %}
+Your Media Cloud account is active
+{% endblock %}
+
+{% block content_body %}
+<p style="text-align: left;line-height: 30px;color: #373737;">
+Hi {{ full_name }},
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+Your Media Cloud account is now active. You can use this user account to access the
+variety of Media Cloud web-based tools and to make calls to the Media Cloud API.
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+<b>Need Help?</b>
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+Visit our <a href="https://groups.io/g/mediacloud">discussion group</a> - 
+that's a great place to ask questions and get support. 
+As a backup, you can always email us at <a href="mailto:support@mediacloud.org">support@mediacloud.org</a>.
+</p>
+{% endblock %}
+
+{% block action_text %}
+Start using Media Cloud
+{% endblock %}
+
+{% block action_url %}
+https://tools.mediacloud.org
+{% endblock %}

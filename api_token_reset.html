@@ -1,0 +1,25 @@
+{% extends "email.html" %}
+
+{% block content_title %}
+Your Media Cloud API Token was Reset
+{% endblock %}
+
+{% block content_body %}
+<p style="text-align: left;line-height: 30px;color: #373737;">
+Hi {{ full_name }},
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+Your Media Cloud API token was reset.
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+If you didn't reset it, please let us know at <a href="mailto:support@mediacloud.org">support@mediacloud.org</a>.
+</p>
+{% endblock %}
+
+{% block action_text %}
+Login to Media Cloud
+{% endblock %}
+
+{% block action_url %}
+https://tools.mediacloud.org
+{% endblock %}

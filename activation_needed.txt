@@ -1,0 +1,35 @@
+{% extends "email.txt" %}
+
+{% block content_title %}
+Activate your Media Cloud account
+{% endblock %}
+
+{% block content_body %}
+Hi {{ full_name }},
+
+Thanks for registering for Media Cloud. Click this link to activate your account:
+  {{ activation_url }}
+
+You can use this user account to access the variety of Media Cloud web-based tools
+and to make calls to the Media Cloud API.
+
+{% if subscribe_to_newsletter %}
+As you requested, we've subscribed you to our discussion group:
+  https://groups.io/g/mediacloud
+That's a great place to ask questions and get support. As a backup, you can always email us at:
+  support@mediacloud.org
+{% else %}
+Need help? Join our discussion group:
+  https://groups.io/g/mediacloud
+or email us at:
+  support@mediacloud.org
+{% endif %}
+{% endblock %}
+
+{% block action_text %}
+Activate your account
+{% endblock %}
+
+{% block action_url %}
+{{ activation_url }}
+{% endblock %}
