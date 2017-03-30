@@ -1,0 +1,21 @@
+{% extends "emails/email.txt" %}
+
+{% block content_title %}
+Topic Spider Update: {{topic_name}}
+{% endblock %}
+
+{% block content_body %}
+We are writing with an update on the spidering we have been doing on your {{ topic_name }} topic.
+
+Topic: {{ topic_name }}
+
+Update: {{ topic_spider_status }}
+{% endblock %}
+
+{% block action_text %}
+View this Topic
+{% endblock %}
+
+{% block action_url %}
+{{ topic_url }}
+{% endblock %}

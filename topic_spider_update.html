@@ -1,0 +1,24 @@
+{% extends "emails/email.html" %}
+
+{% block content_title %}
+Topic Spider Update: {{topic_name}}
+{% endblock %}
+
+{% block content_body %}
+<p style="text-align: left;line-height: 30px;color: #373737;">
+We are writing with an update on the spidering we have been doing on your {{ topic_name }} topic.
+</p>
+<p style="text-align: left;line-height: 30px;color: #373737;">
+<b>Topic</b>: {{ topic_name }}
+<br />
+<b>Update</b>: {{ topic_spider_status }}
+</p>
+{% endblock %}
+
+{% block action_text %}
+View this Topic
+{% endblock %}
+
+{% block action_url %}
+{{ topic_url }}
+{% endblock %}
