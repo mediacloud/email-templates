@@ -10,11 +10,16 @@ You just uploaded a bunch of sources to a collection.  By doing this, you update
 
 {% block content_body %}
 <table>
+<tr>
+<th>URL</th> 
+<th>Name</th>
+<th>Status</th>
+</tr>
 {% for result in content_body %}
-<tr style="text-align: left;line-height: 30px;color: #373737;">
-<td> {{ result.status }}</td>
-<td> {{ result.url }}</td>
-<td> {{ result.name }}</td>
+<tr>
+<td>{{ result.url }}</td>
+<td>{{ result.name }}</td>
+<p>{{ result.status_message }}</p>
 </tr>
 {% endfor %}
 </table>

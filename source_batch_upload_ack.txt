@@ -10,7 +10,9 @@ Hi,
 You just uploaded a bunch of sources to a collection.  By doing this, you updated or created {{ count }} sources.  Here is a summary of how that went.
 
 {% for result in content_body %}
-{{ result.status }}, {{ result.url }}, {{ result.name }}
+{{ result.url }}
+{{ result.name }}
+{{ result.status_message }}
 {% endfor %}
 {% endblock %}
 
