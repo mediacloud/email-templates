@@ -1,0 +1,29 @@
+{% extends "email.html" %}
+
+{% block email_title %}
+Results of Source Batch Update {{ url }}
+{% endblock %}
+
+{% block content_title %}
+You just uploaded a bunch of sources to a collection.  By doing this, you updated or created {{ count }} sources.  Here is a summary of how that went.
+{% endblock %}
+
+{% block content_body %}
+<table>
+{% for result in content_body %}
+<tr style="text-align: left;line-height: 30px;color: #373737;">
+<td> {{ result.status }}</td>
+<td> {{ result.url }}</td>
+<td> {{ result.name }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
+
+{% block action_text %}
+Login to Media Cloud
+{% endblock %}
+
+{% block action_url %}
+https://sources.mediacloud.org/#/login
+{% endblock %}
