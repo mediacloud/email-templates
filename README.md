@@ -9,7 +9,6 @@ Guidelines
  * These templates are in [Jinja format](http://jinja.pocoo.org).
  * Always build `.html` and `.txt` versions (use the same name, but different extension for each).
  * In HTML always use P tags like this: `<p style="text-align: left;line-height: 30px;color: #373737;">`.
- * Make sure to check this out into a sub-directory called "templates/emails", otherwise the jinja template path resoluton won't work.
 
 The Templates
 -------------
