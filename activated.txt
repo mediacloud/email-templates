@@ -13,11 +13,14 @@ variety of Media Cloud web-based tools and to make calls to the Media Cloud API.
 Need Help?
 
 Visit our discussion group:
-  https://groups.io/g/mediacloud">discussion group
+
+https://groups.io/g/mediacloud
+
 That's a great place to ask questions and get support. 
 
 As a backup, you can always email us at:
-  mailto:support@mediacloud.org">support@mediacloud.org</a>.
+
+support@mediacloud.org
 {% endblock %}
 
 {% block action_text %}
