@@ -1,13 +1,13 @@
 {% extends "email.txt" %}
 
 {% block content_title %}
-Your Media Cloud API Token was Reset
+Your Media Cloud API Key was Reset
 {% endblock %}
 
 {% block content_body %}
 Hi {{ full_name }},
 
-Your Media Cloud API token was reset.
+Your Media Cloud API key was reset.
 
 If you didn't reset it, please let us know at:
 
